@@ -1,5 +1,14 @@
+@font-face {
+    font-family: 'Rubik';
+    /* Ruta desde el propio proyecto */
+    /*src: url("..\Ejercicios1\Font\Rubik-VariableFont_wght.ttf");*/
+    
+    /* Funte desde el enlace de google */
+    src:url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Rubik';
     background-color: #ffffff;
     color: #000000;
 }
@@ -7,9 +16,9 @@ body {
 header {
 
     border-radius: 10px;
-    border: 5px outset #bc3b34;
+    border: 5px outset hsl(242,48%,43%);
 
-    background-color: #F74F45;
+    background-color: hsl(49,81%,49%);
     font-size: 25px;
     text-align: left;
 }
@@ -25,19 +34,20 @@ h1 {
 nav ul {
 
     border-radius: 10px;
-    border: 5px outset #d29300;
+    border: 5px outset hsl(242,48%,43%);
 
     text-align: center;
     list-style-type: none;
     font-size: 20px ;
     font-weight: bold;
-    font-style: oblique;
+    font-style: italic;
     padding: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #FAC343;
+    font-family: 'Rubik';
+    background-color: hsl(49,81%,49%);
 }
 
 nav ul li {
+    
     display: inline;
     padding: 60px;
 }
@@ -45,10 +55,10 @@ nav ul li {
 section {
 
     border: 5px;
-    border: 5px outset #ff6550;
+    border: 5px outset hsl(242,25%,31%);
     border-radius: 5px;
-    
-    background-color: #FAB592;
+    color: hsl(47, 13%, 20%);
+    background-color: hsl(49,39%,49%);
 
     
     padding: 0;
@@ -84,5 +94,5 @@ footer {
     text-align: right;
     position: absolute;
     bottom: 0;
-    background-color: #E5C2A0;
+    background-color: hsl(47, 23%, 20%);
 }
