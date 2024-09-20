@@ -1,3 +1,11 @@
+:root{
+    --colorTitulo:hsl(244, 50%, 50%);
+    --cloroBorde: hsl(64, 70%, 31%);
+    --colorFondo: hsl(244, 20%, 50%);
+    --colorFooter: hsl(244, 30%, 30%);
+    
+}
+
 @font-face {
     font-family: 'Rubik';
 
@@ -12,7 +20,7 @@
 
 body {
     font-family: 'Rubik';
-    background-color: #cdcdcd;
+    background-color: hsl(0, 0%, 100%);
 }
 
 header {
@@ -20,9 +28,9 @@ header {
     box-shadow: 5px 10px 10px #000000 ;
 
     border-radius: 10px;
-    border: 5px outset hsl(64, 70%, 31%);
+    border: 5px outset var(--cloroBorde);
 
-    background-color: hsl(244, 50%, 50%);
+    background-color: var(--colorTitulo);
     font-size: 25px;
     text-align: left;
 }
@@ -40,7 +48,7 @@ nav ul {
     box-shadow: 5px 10px 5px #000000 ;
 
     border-radius: 10px;
-    border: 5px outset hsl(64, 70%, 31%);
+    border: 5px outset var(--cloroBorde);
 
     text-align: center;
     list-style-type: none;
@@ -49,7 +57,7 @@ nav ul {
 
     padding: 5px;
     
-    background-color: hsl(244, 20%, 50%);
+    background-color: var(--colorFondo);
 }
 
 nav ul li {
@@ -68,7 +76,7 @@ nav ul li a{
 section {
 
     border: 5px;
-    border: 5px outset hsl(64, 70%, 31%);
+    border: 5px outset var(--cloroBorde);
 
     box-shadow: 10px 10px 5px #000000 ;
     
@@ -76,7 +84,7 @@ section {
     
     border-radius: 5px;
 
-    background-color: hsl(244, 20%, 50%);
+    background-color: var(--colorFondo);
 
 
     padding: 5px;
@@ -113,5 +121,5 @@ footer {
     text-align: right;
     position: absolute;
     bottom: 0;
-    background-color: hsl(244, 30%, 30%);
+    background-color: var(--colorFondo);
 }
