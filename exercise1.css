@@ -1,7 +1,7 @@
 :root{
-    --colorTitulo:hsl(244, 50%, 50%);
+    --colorSecundario:hsl(244, 50%, 50%);
     --cloroBorde: hsl(64, 70%, 31%);
-    --colorFondo: hsl(244, 20%, 50%);
+    --colorPrincipal: hsl(244, 20%, 50%);
     --colorLetras:hsl(208, 50%, 100%);
     --estiloFuente: "Rubik";
 }
@@ -30,7 +30,7 @@ header {
     border-radius: 10px;
     border: 5px outset var(--cloroBorde);
 
-    background-color: var(--colorTitulo);
+    background-color: var(--colorSecundario);
     font-size: 25px;
     text-align: left;
 }
@@ -40,7 +40,7 @@ h1 {
     padding: 15px;
     text-align: center;
     font-size: 60px;
-    color: var(--colorTitulo);
+    color: var(--colorLetras);
 }
 
 nav ul {
@@ -57,7 +57,7 @@ nav ul {
 
     padding: 5px;
     
-    background-color: var(--colorFondo);
+    background-color: var(--colorPrincipal);
 }
 
 nav ul li {
@@ -70,7 +70,7 @@ nav ul li a{
     font-style: italic;
     font-family: var(--estiloFuente);
 
-    color: var(--colorTitulo);
+    color: var(--colorLetras);
 }
 
 section {
@@ -84,7 +84,7 @@ section {
     
     border-radius: 5px;
 
-    background-color: var(--colorFondo);
+    background-color: var(--colorPrincipal);
 
 
     padding: 5px;
@@ -111,7 +111,7 @@ section p {
     font-style: italic;
     text-align: center;
 
-    color: var(--colorTitulo);
+    color: var(--colorLetras);
 }
 
 footer {
@@ -121,5 +121,5 @@ footer {
     text-align: right;
     position: absolute;
     bottom: 0;
-    background-color: var(--colorFondo);
+    background-color: var(--colorPrincipal);
 }
