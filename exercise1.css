@@ -2,7 +2,7 @@
     --colorTitulo:hsl(244, 50%, 50%);
     --cloroBorde: hsl(64, 70%, 31%);
     --colorFondo: hsl(244, 20%, 50%);
-    
+    --colorLetras:hsl(208, 50%, 100%);
     
 }
 
@@ -40,7 +40,7 @@ h1 {
     padding: 15px;
     text-align: center;
     font-size: 60px;
-    color: hsl(208, 50%, 100%);
+    color: var(--colorTitulo);
 }
 
 nav ul {
@@ -70,7 +70,7 @@ nav ul li a{
     font-style: italic;
     font-family: 'Rubik';
 
-    color: hsl(208, 50%, 100%);
+    color: var(--colorTitulo);
 }
 
 section {
@@ -99,7 +99,7 @@ section h2 {
     font-weight: bold;
     text-align: center;
     font-size: 30px;
-    color: hsl(208, 50%, 100%);
+    color: var(--colorTitulo);
 }
 
 section p {
@@ -111,7 +111,7 @@ section p {
     font-style: italic;
     text-align: center;
 
-    color: hsl(208, 50%, 100%);
+    color: var(--colorTitulo);
 }
 
 footer {
