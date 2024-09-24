@@ -1,8 +1,8 @@
-:root{
-    --colorSecundario:hsl(244, 50%, 50%);
+:root {
+    --colorSecundario: hsl(244, 50%, 50%);
     --cloroBorde: hsl(64, 70%, 31%);
     --colorPrincipal: hsl(244, 20%, 50%);
-    --colorLetras:hsl(208, 50%, 100%);
+    --colorLetras: hsl(208, 50%, 100%);
     --estiloFuente: "Rubik";
 }
 
@@ -11,11 +11,18 @@
 
     /* Funte desde el enlace de google */
     src: url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"),
-    
-    url("..\Ejercicios1\Font\Rubik-VariableFont_wght.ttf"),
-    
-    url("..\Ejercicios1\Font\Rubik-VariableFont_wght.woff2");
-    
+
+        url("..\Ejercicios1\Font\Rubik-VariableFont_wght.ttf"),
+
+        url("..\Ejercicios1\Font\Rubik-VariableFont_wght.woff2");
+
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -23,9 +30,15 @@ body {
     background-color: hsl(0, 0%, 100%);
 }
 
+main{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
 header {
 
-    box-shadow: 5px 10px 10px #000000 ;
+    box-shadow: 5px 10px 10px #000000;
 
     border-radius: 10px;
     border: 5px outset var(--cloroBorde);
@@ -45,7 +58,7 @@ h1 {
 
 nav ul {
 
-    box-shadow: 5px 10px 5px #000000 ;
+    box-shadow: 5px 10px 5px #000000;
 
     border-radius: 10px;
     border: 5px outset var(--cloroBorde);
@@ -56,7 +69,7 @@ nav ul {
 
 
     padding: 5px;
-    
+
     background-color: var(--colorPrincipal);
 }
 
@@ -64,7 +77,8 @@ nav ul li {
     display: inline;
     padding: 60px;
 }
-nav ul li a{
+
+nav ul li a {
 
     font-weight: bold;
     font-style: italic;
@@ -74,21 +88,21 @@ nav ul li a{
 }
 
 section {
-
+    
     border: 5px;
     border: 5px outset var(--cloroBorde);
 
-    box-shadow: 10px 10px 5px #000000 ;
-    
-    
+    box-shadow: 10px 10px 5px #000000;
     
     border-radius: 5px;
 
     background-color: var(--colorPrincipal);
 
+    
 
     padding: 5px;
     margin: 25px;
+
 }
 
 section h2 {
@@ -99,7 +113,7 @@ section h2 {
     font-weight: bold;
     text-align: center;
     font-size: 30px;
-    color: var(--colorTitulo);
+    color: var(--colorLetras);
 }
 
 section p {
@@ -109,17 +123,19 @@ section p {
 
     font-size: 18px;
     font-style: italic;
-    text-align: center;
 
     color: var(--colorLetras);
 }
 
 footer {
-
     font-weight: bold;
-    width: 99%;
     text-align: right;
-    position: absolute;
-    bottom: 0;
     background-color: var(--colorPrincipal);
+}
+
+@media(width<=1000px) {
+
+    main{
+        display: list-item;
+    }
 }
